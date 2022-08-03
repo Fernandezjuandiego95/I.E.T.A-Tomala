@@ -1,0 +1,434 @@
+*, *:after, *:before {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz- box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background: url(../img/cielo.png) #6EFFCE;
+    background-size: cover;
+}
+.body_juego {
+    background: url(../img/bosque.png) #6EFFCE;
+    background-repeat: repeat;
+}
+.div {
+    margin: 50px 350px;
+}
+.img {
+    position: absolute;
+    border-radius: 10px;
+}
+h1 {
+    font-family: 'Passion One', 'lato';
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #FF0000;
+    margin-left: 510px;
+    margin-top: 30px;
+}
+p {
+    margin: auto 250px;
+    font-size: 1.5rem;
+    font-family: 'Lato';
+}
+.regresar {
+    margin-top: 420px;
+    margin-left: -350px;
+    font-size: 1.5rem;
+    font-family: 'Lato';
+    color: #FFF000;
+    position: absolute;
+}
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+.div_img {
+    background: #FFFFFF;
+    width: 900px;
+    margin: 10px 250px;
+    position: absolute;
+}
+.div_form {
+    margin: 520px 430px;
+    padding: 10px 30px;
+    background: #6CFFCD;
+    border: 6px inset #03BF7F;
+    font-weight: bold;
+    position: absolute;
+}
+.label {
+    padding: 10px 10px;
+    font-size: 1.5rem;
+    font-family: 'Lato';
+    color: #F00C0C;
+}
+.form_input {
+    width: 15%;
+    border: 1px solid #13A80F;
+    color: black;
+    font-size: 14px;
+    padding: 10px 15px;
+    margin: 2px;
+    outline: medium none;
+}
+.form_input:focus {
+    border: 1px solid red;
+}
+.btn_enviar {
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    background: #03E4EC;
+    border: 2px outset;
+    padding: 8px 15px;
+    margin: 10px;
+    font-size: 14px;
+    color: #035D18;
+}
+.btn_enviar:hover {
+    border: 3px outset;
+}
+/*Estilos para los efectos del boton empezar partida*/
+
+.a {
+    text-decoration: none;
+    color: #06c17f;
+}
+.a:hover {
+    color: #FACF08;
+}
+.a:active {
+    color: #FACF08;
+}
+.corner-button {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: .02rem;
+    cursor: pointer;
+    background: transparent;
+    border: 0.5rem solid currentColor;
+    padding: 1rem 1.5rem;
+    font-size: 1.8rem;
+    margin: 220px 170px;
+    color: #06c17f;
+    position: relative;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+.corner-button:hover {
+    color: #FACF08;
+    border-radius: 25px;
+}
+.corner-button:hover::before {
+    width: 0;
+}
+.corner-button:hover::after {
+    height: 0;
+}
+.corner-button:active {
+    border-width: 0.25rem;
+}
+.corner-button span {
+    position: relative;
+    z-index: 2;
+}
+.corner-button::before, .corner-button::after {
+    content: '';
+    position: absolute;
+    background: #ddd9be;
+    z-index: 1;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.corner-button::before {
+    width: calc(100% - 3rem);
+    height: calc(101% + 1rem);
+    top: -0.5rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.corner-button::after {
+    height: calc(100% - 3rem);
+    width: calc(101% + 1rem);
+    left: -0.5rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/*estilos para los efectos de lineas*/
+
+.lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: auto;
+    width: 90vw;
+}
+.lines .line {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+.lines .line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(75%, #18FF00), to(#18FF00));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #00F6FF 75%, #00BAFF 100%);
+    -webkit-animation: run 7s 0s infinite;
+    animation: run 7s 0s infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+.lines .line:nth-child(1) {
+    margin-left: -20%;
+}
+.lines .line:nth-child(1)::after {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+.lines .line:nth-child(3) {
+    margin-left: 20%;
+}
+.lines .line:nth-child(3)::after {
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+.lines .line:nth-child(4) {
+    margin-left: 40%;
+}
+.lines .line:nth-child(4)::after {
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+}
+.lines .line:nth-child(5) {
+    margin-left: -40%;
+}
+.lines .line:nth-child(5)::after {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+@-webkit-keyframes run {
+    0% {
+        top: -50%;
+    }
+    100% {
+        top: 110%;
+    }
+}
+@keyframes run {
+    0% {
+        top: -50%;
+    }
+    100% {
+        top: 110%;
+    }
+}
+/*Animaciones del fondo(platilla de burbujas)*/
+
+/* KEYFRAMES */
+
+@-webkit-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+@-moz-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+@keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+@-webkit-keyframes sideWays {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 50px;
+    }
+}
+@-moz-keyframes sideWays {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 50px;
+    }
+}
+@keyframes sideWays {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 50px;
+    }
+}
+/* ANIMATIONS */
+
+.x1 {
+    -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    left: -5%;
+    top: 5%;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+}
+.x2 {
+    -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    left: 5%;
+    top: 80%;
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    transform: scale(0.4);
+}
+.x3 {
+    -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    left: 10%;
+    top: 40%;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    transform: scale(0.7);
+}
+.x4 {
+    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    left: 20%;
+    top: 0;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    transform: scale(0.3);
+}
+.x5 {
+    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    left: 30%;
+    top: 50%;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+}
+.x6 {
+    -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    left: 50%;
+    top: 0;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+}
+.x7 {
+    -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    left: 65%;
+    top: 70%;
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    transform: scale(0.4);
+}
+.x8 {
+    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    left: 80%;
+    top: 10%;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    transform: scale(0.3);
+}
+.x9 {
+    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    left: 90%;
+    top: 50%;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+}
+.x10 {
+    -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    left: 80%;
+    top: 80%;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    transform: scale(0.3);
+}
+/* OBJECTS */
+
+.bubble {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}
+.bubble:after {
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(70%, rgba(255, 255, 255, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    /* IE10+ */
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    content: "";
+    height: 180px;
+    left: 10px;
+    position: absolute;
+    width: 180px;
+}

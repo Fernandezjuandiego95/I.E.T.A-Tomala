@@ -1,0 +1,185 @@
+*, *:after, *:before {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    margin: 50px auto;
+    text-align: center;
+    width: 90%;
+    background: url(../img/fondo.jpg) #6EFFCE;
+    background-size: cover;
+}
+.registerbody {
+    margin: 50px auto;
+    text-align: center;
+    width: 90%;
+    background: url(../img/fondo1.png) #6EFFCE;
+}
+h1 {
+    font-family: 'Passion One';
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+label {
+    width: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px 70px;
+    font-size: 1.5rem;
+    font-family: 'Lato';
+}
+.label {
+    padding: 15px 10px;
+    font-size: 1, 2rem;
+    font-family: 'Lato';
+}
+input {
+    border-radius: 10px;
+    border: 2px inset #42FF0090;
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: 'Lato';
+    padding: 10px;
+    outline: medium none;
+}
+input:hover {
+    border: 2px inset #42FF00;
+}
+input:focus {
+
+    border: 1px solid #c8ff00;
+}
+.registro_input {
+    width: 300px;
+    border-radius: 10px;
+    border: 2px inset #42FF0090;
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: 'Lato';
+    padding: 10px;
+    outline: medium none;
+}
+.formregistro {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 120px auto;
+    padding: 10px;
+    border-radius: 30px;
+    border: #ff448490 5px dotted;
+    width: 750px;
+    height: 400px;
+    background: #FFFFFF;
+}
+.formregis {
+    padding: 3px 10px;
+}
+.formregisbtn {
+    padding: 3px 10px;
+}
+form {
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 25px;
+    border: dashed 5px rgb(213, 255, 165);
+    width: 500px;
+    height: 500px;
+    background: #FFFFFF;
+}
+form:hover{
+    border: dashed 5px rgb(177, 253, 89);
+}
+div.form-element {
+    margin: 90px 0px;
+
+}
+button {
+    margin: 40px;
+    margin-left: -100px;
+    padding: 10px 15px;
+    font-size: 1.3rem;
+    font-family: 'Lato';
+    font-weight: 100;
+    background: #22C116;
+    color: white;
+    border: 1px solid #058311;
+    border-radius: 10px;
+}
+button:hover {
+    background: #12E707;
+    border: 2px solid #26AE14;
+}
+button:active {
+    opacity: 0.6;
+}
+.registrar_btn {
+    margin-top: 55px;
+    margin-left: 5px;
+    padding: 10px 15px;
+    font-size: 1.3rem;
+    font-family: 'Lato';
+    font-weight: 100;
+    background: #00F0FF;
+    color: #F80075;
+    border: 1px solid #F80075;
+    border-radius: 10px;
+}
+.registrar_btn:hover {
+    background: #78EFEE;
+    border: 2px solid #0EB2FF;
+}
+.registrar_btn:active {
+    opacity: 0.6;
+}
+p.success, p.error {
+    color: white;
+    font-family: lato;
+    background: yellowgreen;
+    display: inline-block;
+    padding: 2px 10px;
+}
+p.error {
+    background: orangered;
+}
+.avatar {
+    width: 200px;
+    position: absolute;
+    top: 15px;
+    left: calc(50% - 95px);
+}
+.elemento_a {
+    margin-left: -20px;
+    background: #EFED1B;
+    font-size: 20px;
+    color: #000000;
+    box-shadow: 0px 5px 0px #F9F008;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid #FFB400;
+    border-radius: 10px;
+}
+.elemento_a:hover {
+    box-shadow: 0px 2px 0px #F9F008;
+    background: #F6FF0A;
+}
+.elemento_a:active {
+    opacity: 0.6;
+}
+
+
+@media all and (max-width:550px) {
+    
+    form{
+     width: 98%;
+    }
+    label{ 
+    padding: 15px 30px;
+    font-size: 1.5rem;
+
+    }
+}
+

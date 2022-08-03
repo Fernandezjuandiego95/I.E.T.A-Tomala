@@ -1,0 +1,163 @@
+ *{
+    padding: 0px;
+    margin: 0px;
+ }
+ form {
+     width: 700px;
+     margin: 10px auto;
+ }
+ .respuestas {
+     display: flex;
+     flex-flow: row wrap;
+     width: 100px;
+     margin-left: 300px;
+     background: #e9ec3a;
+     border-radius: 5px;
+     border: 1px solid #FF8A00;
+     padding: 10px;
+ }
+
+ .respuestas input {
+     width: 20px;
+ }
+ p {
+     font-size: 20px;
+     line-height: 40px;
+ }
+.p{
+    text-align: center;
+}
+.bb{
+    color: #9F00FF;
+}
+.rrr{
+  width: 70px;
+}
+.az{
+color: #0006FF;
+}
+.ver{
+color: #089B08;
+}
+.ro{
+color: #FF000C;
+}
+.ci{
+color: #4E2712;
+}
+ pre {
+     font-size: 20px;
+     /*tamaño de texto */
+     line-height: 20px;
+     /*interlineado texto*/
+     color: #7558A0;
+ }
+ label {
+     width: 80px;
+     font-size: 20px;
+     line-height: 30px;
+     margin-top: -7px;
+     padding-left: -15px;
+ 
+ }
+ .enviar input {
+     background: red;
+     width: 150px;
+     margin-bottom: 15px;
+ }
+ v .button {
+     position: absolute;
+ }
+ #startBtn {
+     margin-left: 45%;
+     margin-top: 50px;
+     font-size: 20px;
+     /*tamaño de texto */
+     font-weight: bold;
+     /*negrita texto*/
+     font-family: OpenSans;
+     color: #0a0000;
+     background-color: #00FF7C;
+     border: 1px solid #00F133;
+     border-radius: 5px;
+     box-shadow: 0px 5px 0px #00823F;
+     position: relative;
+     top: 0px;
+     transition: all ease 0.3s;
+ }
+ #startBtn:hover {
+    box-shadow: 0px 3px 0px #00823F;
+    background: #16FF0A;
+}
+ #startBtn:active {
+     box-shadow: 0 3px 0 #00823F;
+     top: 3px;
+ }
+ body {
+     margin: 0;
+ }
+ .bg {
+     animation: slide 3s ease-in-out infinite alternate;
+     background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+     bottom: 0;
+     left: -50%;
+     opacity: .5;
+     position: fixed;
+     right: -50%;
+     top: 0;
+     z-index: -1;
+ }
+ .bg2 {
+     animation-direction: alternate-reverse;
+     animation-duration: 4s;
+ }
+ .bg3 {
+     animation-duration: 5s;
+ }
+ .content {
+     background-color: rgba(255, 255, 255, .8);
+     border-radius: .25em;
+     box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+     box-sizing: border-box;
+     left: 50%;
+     padding: 10vmin;
+     position: absolute;
+     top: 205%;
+     transform: translate(-50%, -50%);
+     border: 6px outset #0B8316;
+ }
+ .h2 {
+     font: 34px "Oswald", sans-serif;
+     letter-spacing: 0;
+     display: block;
+     margin: 0 auto;
+     /* Clip Background Image */
+     background: url(../img/letras22.png) repeat-y;
+     -webkit-background-clip: text;
+     background-clip: text;
+     /* Animate Background Image */
+     -webkit-text-fill-color: transparent;
+     -webkit-animation: aitf 80s linear infinite;
+     /* Activate hardware acceleration for smoother animations */
+     -webkit-transform: translate3d(0, 0, 0);
+     -webkit-backface-visibility: hidden;
+ }
+ @keyframes slide {
+     0% {
+         transform: translateX(-25%);
+     }
+     100% {
+         transform: translateX(25%);
+     }
+ }
+
+ footer p {
+    margin-top: 2300px;
+    height: 30px;
+    background: #3B3B3B;
+    border-top: solid 2px #000000;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-family: 'Lato';
+    padding: 30px 520px;
+}

@@ -1,0 +1,138 @@
+*, *:after, *:before {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz- box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background: repeating-radial-gradient(#43F73A, #FCFF17 50px);
+}
+.animacion {
+    border-top: solid 2px #FF0000;
+    border-bottom: solid 2px #FF0000;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.animacion ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    height: 300px;
+    background: #1ce286;
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+}
+.animacion li {
+    width: 100%;
+    list-style: none;
+}
+.animacion img {
+    width: 100%;
+    height: 100%;
+}
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}
+.mate1 {
+    height: 250px;
+    width: 260px;
+    padding-top: 50px;
+    padding-left: 10px;
+}
+.mate2 {
+    height: 250px;
+    width: 260px;
+    padding-top: 120px;
+    padding-left: 10px;
+}
+.h1 {
+    margin: 60px 50px;
+    font-size: 2rem;
+    color: #0E160D;
+    font-family: 'Lato';
+}
+.h2 {
+    text-align: center;
+}
+.div1 {
+    float: left;
+    padding: 10px 50px;
+    margin-top: 2px;
+    margin-left: 50px;
+    height: 810px;
+    width: 800px;
+}
+.div1 .txmision {
+    background: #B3FFE5;
+    border: 6px outset #0B8316;
+    padding: 30px 15px;
+    margin-top: 40px;
+    overflow: hidden;
+    height: 310px;
+    width: 700px;
+}
+.div1 .txvision {
+    background: #B3FFE5;
+    margin-top: 40px;
+    border: 6px outset #0B8316;
+    padding: 30px 40px;
+    overflow: hidden;
+    height: 340px;
+    width: 700px;
+}
+.div1 .texto1 {
+    text-align: justify;
+    font-size: 20px;
+    /*tamaño de texto */
+    line-height: 40px;
+    /*interlineado texto*/
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.div2 {
+    float: left;
+    margin-top: 2px;
+    margin-left: 50px;
+    height: 380px;
+    width: 400px;
+}
+.video {
+    margin-top: -50px;
+    height: 250px;
+    width: 400px;
+}
+footer {
+    margin-top: 800px;
+    height: 80px;
+    background: #3B3B3B;
+    border-top: solid 2px #000000;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-family: 'Lato';
+    padding: 30px;
+}
