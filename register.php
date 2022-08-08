@@ -41,7 +41,7 @@ if (isset($_POST['register'])) {
 
 <HTML>
 <head>
-    <link rel="stylesheet" href="css/estilos11122.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Registrar Usuario</title>
 </head>
 <body class="registerbody">
@@ -57,11 +57,11 @@ if (isset($_POST['register'])) {
         <label class="label">Usuario</label>
           <input type="text" name="usuario" pattern="[a-zA-Z0-9]+" required class="registro_input"/>
          </div>
-         <div class="formregis">
+         <div class="formregis all">
         <label class="label">Email</label>
         <input type="email" name="email" required class="registro_input"/>
    
-        <label class="label">Password</label>
+        <label class="label">Contraseña</label>
         <input type="password" name="password" required class="registro_input"/>
         <br>
         <button type="submit" name="register" value="register" class="registrar_btn">Registrar</button>

@@ -17,6 +17,8 @@ body {
     text-align: center;
     width: 90%;
     background: url(../img/fondo1.png) #6EFFCE;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 h1 {
     font-family: 'Passion One';
@@ -74,8 +76,13 @@ input:focus {
     height: 400px;
     background: #FFFFFF;
 }
+.formregistro:hover{
+    border: #fc005890 5px dotted;
+}
+
 .formregis {
     padding: 3px 10px;
+
 }
 .formregisbtn {
     padding: 3px 10px;
@@ -170,7 +177,7 @@ p.error {
     opacity: 0.6;
 }
 
-
+/*Media query para adaptar el login*/
 @media all and (max-width:550px) {
     
     form{
@@ -183,3 +190,121 @@ p.error {
     }
 }
 
+/*Media query para adaptar la sesion de registro de usuiario*/
+
+@media all and (max-width:830px) {
+    
+ .formregistro{
+   width: 100%;
+ }
+}
+
+@media all and (min-width:650px) and (max-width:770px) {
+    
+    .formregistro{
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+    .formregis{
+        width: 100%;
+        height: 100%;
+   }
+   .all{
+       position: absolute;
+       width: 50%;
+       height: 95%;
+   }
+   .label{
+       font-size: 1.4rem;
+   }
+   .registro_input{
+        width: 260px;
+        display: flex;
+   }
+}
+@media all and (min-width:501px) and (max-width:649px) {
+    
+    .formregistro{
+        width: 100%;
+        height: 650px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: -1rem;
+      }
+      .formregis{
+          width: 60%;
+          height: 50%;
+          justify-content: center;
+          margin-top: -18rem;
+          margin-left: 7rem;
+     }
+     .all{
+         position:absolute;
+         width: 60%;
+         height: 55%;
+         margin-top: 23rem;
+
+     }
+     .label{
+         font-size: 1.4rem;
+     }
+     .registro_input{
+          width: 260px;
+          display: flex;
+     }
+     .registrar_btn {
+        margin-top: 20px;
+        margin-left: 0px;
+     }
+}
+
+
+@media all and (max-width:500px) {
+    
+    .formregistro{
+        width: 100%;
+        height: 650px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: -1rem;
+      }
+      .formregis{
+          width: 60%;
+          height: 50%;
+          justify-content: center;
+          margin-top: -18rem;
+          margin-left: 4rem;
+     }
+     .all{
+         position:absolute;
+         width: 60%;
+         height: 55%;
+         margin-top: 23rem;
+
+     }
+     .label{
+         font-size: 1.4rem;
+     }
+     .registro_input{
+          width: 260px;
+          display: flex;
+     }
+     .registrar_btn {
+        margin-top: 20px;
+        margin-left: 0px;
+     }
+}
+
+@media all and (max-width:380px) {
+    
+      .formregis{
+          margin-left: 2rem;
+     }
+ }

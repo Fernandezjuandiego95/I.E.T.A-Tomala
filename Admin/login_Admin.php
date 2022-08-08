@@ -32,7 +32,7 @@ if (isset($_POST['login'])) {
 
 <HTML>
 <head>
-    <link rel="stylesheet" href="../css/estilos11122.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Iniciar Sesion</title>
 </head>
 <body>
