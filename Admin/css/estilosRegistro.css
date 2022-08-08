@@ -1,0 +1,232 @@
+
+*, *:after, *:before {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    margin: 50px auto;
+    text-align: center;
+    width: 90%;
+    background: url(../../img/fondo1.png) #6EFFCE;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+label {
+    width: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px 70px;
+    font-size: 1.5rem;
+    font-family: 'Lato';
+}
+.label {
+    padding: 15px 10px;
+    font-size: 1, 2rem;
+    font-family: 'Lato';
+}
+.registro_input {
+    width: 300px;
+    border-radius: 10px;
+    border: 2px inset #42FF0090;
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: 'Lato';
+    padding: 10px;
+    outline: medium none;
+}
+.formregistro {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 120px auto;
+    padding: 10px;
+    border-radius: 30px;
+    border: #ff448490 5px dotted;
+    width: 750px;
+    height: 400px;
+    background: #FFFFFF;
+}
+.formregistro:hover{
+    border: #fc005890 5px dotted;
+}
+
+.formregis {
+    padding: 3px 10px;
+
+}
+.formregisbtn {
+    padding: 3px 10px;
+}
+
+.registrar_btn {
+    margin-top: 55px;
+    margin-left: 5px;
+    padding: 10px 15px;
+    font-size: 1.3rem;
+    font-family: 'Lato';
+    font-weight: 100;
+    background: #00F0FF;
+    color: #F80075;
+    border: 1px solid #F80075;
+    border-radius: 10px;
+}
+.registrar_btn:hover {
+    background: #78EFEE;
+    border: 2px solid #0EB2FF;
+}
+.registrar_btn:active {
+    opacity: 0.6;
+}
+p.success, p.error {
+    color: white;
+    font-family: lato;
+    background: yellowgreen;
+    display: inline-block;
+    padding: 2px 10px;
+}
+p.error {
+    background: orangered;
+}
+.elemento_a {
+    margin-left: 40px;
+    background: #EFED1B;
+    font-size: 20px;
+    color: #000000;
+    box-shadow: 0px 5px 0px #F9F008;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid #FFB400;
+    border-radius: 10px;
+}
+.elemento_a:hover {
+    box-shadow: 0px 2px 0px #F9F008;
+    background: #F6FF0A;
+}
+.elemento_a:active {
+    opacity: 0.6;
+}
+
+/*Media query para adaptar la sesion de registro de usuiario*/
+
+@media all and (max-width:830px) {
+    
+    .formregistro{
+      width: 100%;
+    }
+   }
+   
+   @media all and (min-width:650px) and (max-width:770px) {
+       
+       .formregistro{
+         width: 100%;
+         position: relative;
+         display: flex;
+         flex-direction: row-reverse;
+         justify-content: space-between;
+       }
+       .formregis{
+           width: 100%;
+           height: 100%;
+      }
+      .all{
+          position: absolute;
+          width: 50%;
+          height: 95%;
+      }
+      .label{
+          font-size: 1.4rem;
+      }
+      .registro_input{
+           width: 260px;
+           display: flex;
+      }
+   }
+   @media all and (min-width:501px) and (max-width:649px) {
+       
+       .formregistro{
+           width: 100%;
+           height: 650px;
+           position: relative;
+           display: flex;
+           flex-direction: column;
+           flex-wrap: wrap;
+           margin-top: -1rem;
+         }
+         .formregis{
+             width: 60%;
+             height: 50%;
+             justify-content: center;
+             margin-top: -18rem;
+             margin-left: 7rem;
+        }
+        .all{
+            position:absolute;
+            width: 60%;
+            height: 55%;
+            margin-top: 23rem;
+   
+        }
+        .label{
+            font-size: 1.4rem;
+        }
+        .registro_input{
+             width: 260px;
+             display: flex;
+        }
+        .registrar_btn {
+           margin-top: 20px;
+           margin-left: 0px;
+        }
+   }
+   
+   
+   @media all and (max-width:500px) {
+       
+       .formregistro{
+           width: 100%;
+           height: 650px;
+           position: relative;
+           display: flex;
+           flex-direction: column;
+           flex-wrap: wrap;
+           margin-top: -1rem;
+         }
+         .formregis{
+             width: 60%;
+             height: 50%;
+             justify-content: center;
+             margin-top: -18rem;
+             margin-left: 4rem;
+        }
+        .all{
+            position:absolute;
+            width: 60%;
+            height: 55%;
+            margin-top: 23rem;
+   
+        }
+        .label{
+            font-size: 1.4rem;
+        }
+        .registro_input{
+             width: 260px;
+             display: flex;
+        }
+        .registrar_btn {
+           margin-top: 20px;
+           margin-left: 0px;
+        }
+   }
+   
+   @media all and (max-width:380px) {
+       
+         .formregis{
+             margin-left: 2rem;
+        }
+    }
+   
