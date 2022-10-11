@@ -1,0 +1,137 @@
+*, *:after, *:before {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(to left bottom,  #a3ff9e, #ceffcc, #f7fff7);
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.div {
+    background: rgb(255, 255, 255);
+    border-top: 2px solid rgb(189, 188, 188);
+    border-bottom: 2px solid rgba(189, 188, 188);
+    border-left: 2px solid rgba(189, 188, 188);
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 30px;
+    width: 74%;
+}
+
+h1 {
+    font-family: 'Bebas Neue', lato;
+    font-size: 4rem;
+    margin-top: 10px;
+    color: rgb(0, 117, 10);
+    animation: tracking-in-expand 0.7s .7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+h2, h3 {
+    font-size: 26px;
+    color: rgb(0, 117, 10);
+    padding-left: 70px;
+    margin-top: 40px;
+    font-family: 'Bebas Neue', lato;
+}
+
+h3{
+    font-size: 22px;
+}
+
+.azul {
+    color: #1503FF;
+}
+
+.rojo {
+    color: #FF0000;
+}
+
+.verde {
+    color: #15BD03;
+}
+
+.morado {
+    color: #C707C0;
+}
+
+.rosa {
+    color: #E700B9;
+}
+
+.texto2 {
+    font-size: 20px;
+    padding-left: 39%;
+}
+
+
+.elemento_a {
+    position: relative;
+    padding: 10px 40px;
+    float: left;
+    border-radius: 3px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: #2ecc71;
+    border: none;
+    border-bottom: 5px solid #27ae60;
+    text-shadow: 0px -2px #27ae60;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    margin-left: 40%;
+    font-family: 'Bebas Neue', lato;
+   }
+ 
+ .elemento_a:hover{
+    -webkit-transform: translate(0px,5px);
+    -ms-transform: translate(0px,5px);
+    transform: translate(0px,5px);
+    border-bottom: 1px solid #2ecc71;
+   }
+
+.elemento_a:active {
+    font-size: 16px;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/svg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pfooter{
+    margin-top: 8rem;
+    font-size: 18px;
+    color: #0a0a0a;
+    position: absolute;
+    font-family: 'Bebas Neue', lato;
+}

@@ -15,11 +15,11 @@ if (isset($_POST['login'])) {
     $result = $query->fetch(PDO::FETCH_ASSOC);
  
     if (!$result) {
-        echo '<p class="error">Contraseña o usuario incorrecto</p>';
+        echo '<script>alert("Contraseña o usuario incorrecto")</script>';
     } else {
         if (password_verify($password, $result['password'])) {
             $_SESSION['user_id'] = $result['ID'];
-            echo '<p class="success">¡Bienvenido!</p>';
+            echo '<script>alert("¡Bienvenido!")</script>';
             header("location:paginaProyecto/inicio.html");
         } else {
             echo '<script>alert ("Contraseña incorrecta")</script>';
@@ -49,7 +49,7 @@ if (isset($_POST['login'])) {
         <button type="submit" name="login" value="login">Entrar</button>
         <a href="register.php" class="elemento_a">Registro</a>
         <br>
-        <a href="Admin/login_Admin.php">Administrador</a>
+        <!--<a href="Admin/login_Admin.php">Administrador</a>-->
         
     </div>
 </form>

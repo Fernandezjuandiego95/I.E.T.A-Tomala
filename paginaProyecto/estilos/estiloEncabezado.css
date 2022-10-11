@@ -1,64 +1,95 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+.section{
+    width: 100%;
+    height: 655px;
+    background-image: linear-gradient(to right top, #079b00, #40b401, #66cd01, #8be600, #b0ff00);
+    display: flex;
+    justify-content: center;
+}
+
 header {
-    background: conic-gradient(#05FFBB, #35F3B7);
-    height: 35%;
+    background-color: rgba(255, 255, 255, .3); 
+    backdrop-filter: blur(5px);
+    border-left: 2px solid rgba(255, 254, 254, 0.7);
+    border-top: 2px solid rgba(255, 254, 254, 0.7);
+    width: 94%;
+    height: 85%;
+    margin-top: 2rem;
+    border-radius: 20px;
+    position: relative;
 }
-.escudo {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    position: inherit;
-    float: left;
+header:hover{
+    background-color: rgba(255, 255, 255, .4);
 }
+
 h1 {
-    font: 700 4em/1 "Oswald", sans-serif;
-    letter-spacing: 0;
-    padding: .25em 0 .325em;
-    display: block;
-    margin: 0 408px;
-    text-shadow: 0 0 80px rgba(255, 255, 255, .5);
-    /* Clip Background Image */
-    background: url(../img/letrash1.png) repeat-y;
-    -webkit-background-clip: text;
-    background-clip: text;
-    /* Animate Background Image */
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: aitf 80s linear infinite;
-    /* Activate hardware acceleration for smoother animations */
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
+    font-size: 6rem;
+    color: #ffffff;
+    font-family: 'Bebas Neue', lato;
+    position: absolute;
+    margin-top: 8rem;
+    margin-left: 2.5rem;
 }
-@-webkit-keyframes aitf {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
+
+.escudo {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-top: 3rem;
+    margin-left: 60%;
 }
-.menu {
+
+
+nav .menu {
     list-style: none;
-    padding: 0;
-    background: #092327;
     border-radius: 25px;
-    border: 2px inset #42FF0090;
-    width: 80%;
-    max-width: 900px;
+    border-bottom: 4px inset #32bb0090;
+    width: 70%;
     margin: auto;
+    margin-top: 15px;
 }
-.menu li a {
+nav .menu:hover{
+    border: none;
+}
+
+nav .menu li a {
     text-decoration: none;
-    color: white;
+    color: rgb(10, 10, 10);
     padding: 20px;
     display: block;
-    margin-left: 40px;
+    margin-left: 50px;
+    border-radius: 4px;
+    font-family: 'Bebas Neue', lato;
+    font-size: 18px;
 }
-.menu li {
+nav .menu li {
     display: inline-block;
 }
-.menu li a:hover {
-    background: #ef8354;
+nav .menu li a:hover {
+    animation: animationborder 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+nav .menu li a:active{
+    padding: 15px;
+    font-size: 16px;
+}
+
+@keyframes animationborder {
+ from{
+    background-color: rgba(145, 255, 72, 0.938);
+ }
+ to{  
+    background-color: rgba(1, 255, 72, 0.938);
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: outset;
+    border-color: rgb(6, 172, 0);
+    transition-property: border-radius, border-width, border-style, border-color ;
+    transition-duration: .1s;
+ }
 }

@@ -3,128 +3,104 @@
         <title>
             Inicio
         </title>
-        <meta charset="utf-8">
-            <link href="estilos/estilosIndex.css" rel="stylesheet">
-                <link href="estilos/estiloEncabezado.css" rel="stylesheet">
-                    <link href="calendario/css/calendarjs.css" rel="stylesheet">
-                    </link>
-                </link>
-            </link>
-        </meta>
+        <meta charset="utf-8"/>
+            <link href="estilos/estilosIndex.css" rel="stylesheet"/> 
+            <link href="estilos/estiloEncabezado.css" rel="stylesheet"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     </head>
+
     <body>
-        <header>
-            <img class="escudo" src="img/escudo.jpeg">
-                <h1>
-                    I.E.T.A De Tómala
-                </h1>
-                <ul class="menu">
-                    <li>
-                        <a href="inicio.html">
-                            Inicio
-                        </a>
-                    </li>
-                    <li>
-                        <a href="suma.html">
-                            Sumar
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Resta.html">
-                            Restar
-                        </a>
-                    </li>
-                    <li>
-                        <a href="multiplicar.html">
-                            Multiplicar
-                        </a>
-                    </li>
-                    <li>
-                        <a href="problema.html">
-                            Problemas
-                        </a>
-                    </li>
-                    <li>
-                        <a href="prueba.html">
-                            Prueba
-                        </a>
-                    </li>
-                </ul>
-            </img>
-        </header>
-        <div class="animacion">
-            <ul>
-                <li>
-                    <img src="img/img1.png">
-                    </img>
-                </li>
-                <li>
-                    <img src="img/img3.png">
-                    </img>
-                </li>
-                <li>
-                    <img src="img/img2.png">
-                    </img>
-                </li>
-                <li>
-                    <img src="img/img4.png">
-                    </img>
-                </li>
-            </ul>
-        </div>
-        <div class="div1">
-            <div class="txmision">
+        <section class="section">
+            <header>
+                <nav>
+                   <ul class="menu">
+                        <li>
+                            <a href="inicio.html">
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="suma.html">
+                                Sumar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Resta.html">
+                                Restar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="multiplicar.html">
+                                Multiplicar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="problema.html">
+                                Problemas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="prueba.html">
+                                Prueba
+                            </a>
+                        </li>
+                    </ul> 
+                </nav>
+                <h1> I.E.T.A De Tómala </h1>
+                <img class="escudo" src="img/escudo.jpeg"></img>
+            </header>
+        </section>
+
+        <section class="section2">
+          
+            <!--------------Figuras------------->
+                    <span class="cuadrado cubo"></span>
+                    <span class="circulo circle"></span>
+                    <span class="cuadrado cubo2"></span>
+                    <span class="circulo circle2"></span>
+            <!---------------------------------->
+            <div class="card">
                 <h2 class="h2">
                     MISIÓN
                 </h2>
-                <p class="texto1">
+                <p class="texto">
                     Formar bachilleres técnicos agropecuarios a través de la educación inclusiva, 
-            con principio y valores,  capaces de contribuir con el desarrollo socioeconómico 
-            del entorno a través de proyectos pedagógicos productivos, conservando el medio ambiente 
-            y puedan continuar sus estudios superiores con actitud emprendedora bajo el enfoque socioformativos.
+                    con principio y valores,  capaces de contribuir con el desarrollo socioeconómico 
+                    del entorno a través de proyectos pedagógicos productivos, conservando el medio ambiente 
+                    y puedan continuar sus estudios superiores con actitud emprendedora bajo el enfoque socioformativos.
                 </p>
             </div>
-            <div class="txvision">
+            <div class="card">
                 <h2 class="h2">
                     VISIÓN
                 </h2>
-                <p class="texto1">
+                <p class="texto">
                     Ser en el año 2023 una institución de excelencia académica e integral en la formación técnica
-        agropecuaria de los estudiantes de la región, a través de proyectos pedagógicos productivos y 
-        la aplicación de estándares y competencias que les permitan continuar estudios superiores, ser
-        emprendedores e impulsar el desarrollo socioeconómico de la región y el país.
+                    agropecuaria de los estudiantes de la región, a través de proyectos pedagógicos productivos y 
+                    la aplicación de estándares y competencias que les permitan continuar estudios superiores, ser
+                    emprendedores e impulsar el desarrollo socioeconómico de la región y el país.
                 </p>
             </div>
-        </div>
-        <div class="div2">
-            <div class="root">
-                <div class="calendar" id="calendar">
-                </div>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" type="text/javascript">
-                </script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js" type="text/javascript">
-                </script>
-                <script src="calendario/js/calendar.js" type="text/javascript">
-                </script>
-                <script type="text/javascript">
-                    let calendar = new Calendar('calendar');
-        calendar.getElement().addEventListener('change', e => {
-            console.log(calendar.value().format('LLL'));
-        });
-                </script>
-            </div>
-            <h2 class="h1">
-                Conoce la Institucion
-            </h2>
-            <video class="video" controls="" src="img/ilustracion.mp4">
-            </video>
-        </div>
-    </body>
-    <footer>
-        <p>
-            <center>
-                Derechos reservados © 2021
-            </center>
-        </p>
-    </footer>
+               
+            
+        </section>
+
+        <div class="div-video">
+            <h2 class="title">Conoce la Institucion</h2>
+            <video class="video" controls="" src="img/ilustracion.mp4" ></video>
+       </div>
+
+       
+       <img src="img/paisaje.png" alt="paisaje" class="paisaje">
+   
+</body>
+
+<footer>
+     <p class="p">
+         Derechos reservados © 2021
+     </p>
+ </footer>
 </html>

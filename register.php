@@ -17,7 +17,7 @@ if (isset($_POST['register'])) {
     $query->execute();
  
     if ($query->rowCount() > 0) {
-        echo '<p class="error">¡Este correo electrónico ya existe!</p>';
+        echo '<script>alert ("¡Este correo electrónico ya existe!")</script>';
     }
  
     if ($query->rowCount() == 0) {
@@ -30,9 +30,9 @@ if (isset($_POST['register'])) {
         $result = $query->execute();
  
         if ($result) {
-            echo '<p class="success">¡Tu registro fue exitoso!</p>';
+            echo '<script>alert ("¡Tu registro fue exitoso!")</script>';
         } else {
-            echo '<p class="error">¡Algo salió mal!</p>';
+            echo '<script>alert ("¡Algo salió mal!")</script>';
         }
     }
 }

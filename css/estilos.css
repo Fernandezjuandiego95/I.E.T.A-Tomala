@@ -199,7 +199,7 @@ p.error {
  }
 }
 
-@media all and (min-width:650px) and (max-width:770px) {
+@media all and (min-width:661px) and (max-width:770px) {
     
     .formregistro{
       width: 100%;
@@ -207,6 +207,7 @@ p.error {
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
+      background-color: #00F0FF;
     }
     .formregis{
         width: 100%;
@@ -225,7 +226,7 @@ p.error {
         display: flex;
    }
 }
-@media all and (min-width:501px) and (max-width:649px) {
+@media all and (min-width:501px) and (max-width:660px) {
     
     .formregistro{
         width: 100%;
@@ -280,7 +281,7 @@ p.error {
           height: 50%;
           justify-content: center;
           margin-top: -18rem;
-          margin-left: 4rem;
+          margin-left: 2rem;
      }
      .all{
          position:absolute;
@@ -298,13 +299,13 @@ p.error {
      }
      .registrar_btn {
         margin-top: 20px;
-        margin-left: 0px;
+        margin-left: -5px;
      }
 }
 
-@media all and (max-width:380px) {
+@media all and (max-width:400px) {
     
       .formregis{
-          margin-left: 2rem;
+          margin-left: .8rem;
      }
  }

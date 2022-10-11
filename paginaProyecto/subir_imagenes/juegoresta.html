@@ -1,49 +1,49 @@
-<html>
-    <head>
-        <link href="estilos/estilosrestajuegohtml.css" rel="stylesheet">
-            <title>
-                Juego
-            </title>
-        </link>
-    </head>
-    <body>
-        <!-------------------------------lineas---------------------------------->
-        <div class="lines">
-            <div class="line">
-            </div>
-            <div class="line">
-            </div>
-            <div class="line">
-            </div>
-            <div class="line">
-            </div>
-            <div class="line">
-            </div>
-        </div>
-        <!-------------------------------fin lineas---------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos/estiloscss.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+	<title>Juego</title>
+</head>
+<body>
+    <section class="section">
+            <!-----------------------Tituo y parrafo explicativo------------------------------------->
         <header>
-            <h1>
-                Aprendamos a Restar
-            </h1>
-            <p>
-                En este juego tendras 10 preguntas a responder, para aumentar tu capasidad de restar.
-            </p>
+            <h1>Aprendamos a Restar</h1>
+            <p>En este juego tendras 10 preguntas a responder, para aumentar tu capasidad de restar.</p>
         </header>
-        <div class="div">
-            <img class="img" src="img/lago.png">
-                <button class="corner-button">
-                    <span>
-                        <a class="a" href="juegoresta.php">
-                            Empezar Partida
-                        </a>
-                        <span>
-                        </span>
-                    </span>
-                </button>
+            <!--------------------------------------------------------------------------------------->
+
+        <div class="div-padre"> 
+            <div class="div">
+                <!-------------------Boton Para ir a la seccion del juego------------------------------->
+                <a class="a" href="./juego/juegoresta.php">
+                <button class="empezar">
+                    Empezar Partida
+                </button></a>
+                <!-------------------------------------------------------------------------------------->     
+    
+        
+                <!-------------------Boton Para regresar a la seccion de suma--------------------------->
                 <a class="regresar" href="../resta.html">
-                    Regresar
-                </a>
-            </img>
+                <button class="cta">
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                    <span>Regresar</span>
+                </button></a>
+                <!------------------------------------------------------------------------------------->  
+            </div>
+
+            <img src="./img/Online.png" alt="ilustracion" class="img-ilustracion">
         </div>
-    </body>
+    </section>
+</body>
 </html>

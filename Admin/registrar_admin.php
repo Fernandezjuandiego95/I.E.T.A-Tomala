@@ -17,7 +17,7 @@ if (isset($_POST['register'])) {
     $query->execute();
  
     if ($query->rowCount() > 0) {
-        echo '<p class="error">¡Este correo electrónico ya existe!</p>';
+        echo '<script>alert ("¡Este correo electrónico ya existe!")</script>';
     }
  
     if ($query->rowCount() == 0) {
@@ -30,9 +30,9 @@ if (isset($_POST['register'])) {
         $result = $query->execute();
  
         if ($result) {
-            echo '<p class="success">¡Tu registro fue exitoso!</p>';
+            echo '<script>alert ("¡Tu registro fue exitoso!")</script>';
         } else {
-            echo '<p class="error">¡Algo salió mal!</p>';
+            echo '<script>alert ("¡Algo salió mal!")</script>';
         }
     }
 }
@@ -41,7 +41,7 @@ if (isset($_POST['register'])) {
 
 <HTML>
 <head>
-    <link rel="stylesheet" href="css/estilosRegistro.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Registrar Usuario</title>
 </head>
 <body>
@@ -57,7 +57,7 @@ if (isset($_POST['register'])) {
         <label class="label">Usuario</label>
         <input type="text" name="usuario" pattern="[a-zA-Z0-9]+" required class="registro_input"/>
          </div>
-         <div class="formregis">
+         <div class="formregis all">
         <label class="label">Email</label>
         <input type="email" name="email" required class="registro_input"/>
    

@@ -36,9 +36,7 @@ if (isset($_POST['login'])) {
     <title>Iniciar Sesion</title>
 </head>
 <body>
-<img src="../img/admin.png" class="avatar" alt="I.E.T.A De Tomala">
-<img src="../img/marco1.1.png" class="marco1_1"> 
-<img src="../img/marco1.1.png" class="marco1"> 
+<img src="../img/admin.png" class="avatar" alt="Ilustracion">
 <form method="post" action="" name="signin-form">
     <div class="form-element">
         <label>Usuario</label>

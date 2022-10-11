@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.section{
+    width: 100%;
+    height: 110px;
+    background-image: linear-gradient(to right top, #079b00, #40b401, #66cd01, #8be600, #b0ff00);
+    display: flex;
+    justify-content: center;
+    border-bottom: 4px inset rgb(0, 139, 7);
+}
+
+header {
+    background-color: rgba(255, 255, 255, .3); 
+    backdrop-filter: blur(5px);
+    border-left: 2px solid rgba(255, 254, 254, 0.7);
+    border-top: 2px solid rgba(255, 254, 254, 0.7);
+    width: 94%;
+    height: 72%;
+    margin-top: .5rem;
+    border-radius: 20px;
+ 
+}
+header:hover{
+    background-color: rgba(255, 255, 255, .4);
+}
+
+nav .menu {
+    list-style: none;
+    width: 75%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+nav .menu li {
+    display: inline-block;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    padding: 20px;
+    display: block;
+    margin-left: 50px;
+    border-radius: 4px;
+    font-family: 'Bebas Neue', lato;
+    font-size: 18px;
+}
+
+nav .menu li a:hover {
+    animation: animationborder 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+nav .menu li a:active{
+    padding: 15px;
+    font-size: 16px;
+}
+
+@keyframes animationborder {
+ from{
+    background-color: rgba(145, 255, 72, 0.938);
+ }
+ to{  
+    background-color: rgba(1, 255, 72, 0.938);
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: outset;
+    border-color: rgb(6, 172, 0);
+    transition-property: border-radius, border-width, border-style, border-color ;
+    transition-duration: .1s;
+ }
+}
+
+
+.alfiler{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-image: url(./../img/alfiler2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.alfil-dere{
+      margin-top: 15px;
+      margin-left: -1%;
+      rotate: 260deg;
+}
+
+.alfil-izq{
+    margin-top: -50px;
+    margin-left: 98%;
+}

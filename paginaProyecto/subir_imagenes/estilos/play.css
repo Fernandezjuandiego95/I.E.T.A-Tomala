@@ -1,0 +1,72 @@
+*, *:after, *:before {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(./../img/5.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', lato;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.div_img {
+    background: #FFFFFF;
+    width: 900px; 
+}
+
+.div_form {
+    width: 55%;
+    height: 80px;
+    margin-top: 10px;
+    padding: 10px 30px;
+    background: #eaffba;
+    border: 4px inset #6ff597;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.label {
+    padding: 10px 10px;
+    font-size: 1.5rem;
+    color: rgb(0, 117, 10);
+    font-weight: 600;
+}
+
+.form_input {
+    width: 15%;
+    border: 2px solid rgb(0, 117, 10);
+    color: black;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    outline: medium none;
+}
+.form_input:focus {
+    border: 1px solid rgb(0, 182, 15);
+}
+
+.btn_enviar {
+    cursor: pointer;
+    background: #74ff87;
+    border: 2px outset #56d667;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: rgb(0, 117, 10);
+    font-weight: 600;
+    margin-left: 34px;
+}
+.btn_enviar:hover {
+    border: 3px outset #56d667;
+}

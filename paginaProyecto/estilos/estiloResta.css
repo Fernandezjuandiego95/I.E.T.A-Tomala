@@ -1,0 +1,33 @@
+*, *:after, *:before {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    margin-left: 40%;
+}
+
+
+.t{
+    font-size: 30px;
+}
+
+
+.cuadro, .cuadro2, .cuadro3{
+    margin-left: 27%;
+}
+.cuadro {
+    width: 400px;
+}
+.cuadro2 {
+    width: 250px;
+}
+.cuadro3 {
+    width: 400px;
+}
+
+
